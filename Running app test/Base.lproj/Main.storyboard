@@ -56,21 +56,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOW-D1-s5f">
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-NM-eEY">
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2II-m1-j7X">
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ag-te-UEy">
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
@@ -83,17 +68,27 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVu-R7-Ix1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="DVO-Cn-XZF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="locationServiceSwitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDK-Ht-4vn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AVu-R7-Ix1" firstAttribute="top" secondItem="K60-8F-nys" secondAttribute="bottom" constant="8" symbolic="YES" id="6JR-Pm-HSr"/>
+                            <constraint firstItem="AVu-R7-Ix1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DuL-3C-8hF"/>
                             <constraint firstItem="K60-8F-nys" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dmg-nC-QPJ"/>
                             <constraint firstItem="K60-8F-nys" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pBC-Qq-tTq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AVu-R7-Ix1" secondAttribute="bottom" constant="20" id="wHW-Wd-5ZC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="accXLbl" destination="wOW-D1-s5f" id="hh5-NW-eyv"/>
-                        <outlet property="accYLbl" destination="4hM-NM-eEY" id="qpe-OI-QrV"/>
-                        <outlet property="accZLbl" destination="2II-m1-j7X" id="6xg-to-WWM"/>
                         <outlet property="altitudeLbl" destination="0kg-dR-HS2" id="JoI-Sc-gi4"/>
                         <outlet property="headingLbl" destination="MFp-yf-prM" id="GRB-cK-Pwe"/>
                         <outlet property="horizontalAccuracyLbl" destination="oao-Ov-rxd" id="Cmj-gu-QhA"/>
@@ -107,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="106.59670164917542"/>
+            <point key="canvasLocation" x="139.13043478260872" y="105.97826086956522"/>
         </scene>
     </scenes>
 </document>

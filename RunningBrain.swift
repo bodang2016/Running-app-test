@@ -36,10 +36,15 @@ class RunningBrain {
     }
     
     func calculatePaceRate(Velocity: Double) -> Dictionary<String, Int>{
-        let pace = 1000 / Velocity
+        let pace: Double
+        if Velocity < 0.1 {
+            pace = 0
+        } else {
+            pace = 1000 / Velocity
+        }
         let paceInMinute: Int = Int(pace) / 60
         let paceInSecond: Int = Int(pace) % 60
-        
+            print(pace)
         let paceRate: Dictionary<String, Int> = [
             "minute": paceInMinute,
             "second": paceInSecond
